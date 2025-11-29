@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ecosytrix — Smart Adaptive Window</title>
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Lucide Icons CDN -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+
+  <style>
+    body { font-family: system-ui, sans-serif; }
+  </style>
+</head>
+
+<body class="min-h-screen bg-gradient-to-b from-white to-slate-50 text-slate-900">
+  <!-- HEADER -->
+  <header class="max-w-6xl mx-auto p-6 flex items-center justify-between">
+    <div class="flex items-center gap-3">
+      <div class="w-12 h-12 rounded-lg bg-green-600 flex items-center justify-center text-white text-xl">🌿</div>
+      <div>
+        <h1 class="text-2xl font-extrabold">Ecosytrix</h1>
+        <p class="text-sm text-slate-600">The Smart Adaptive Heat-Control Window</p>
+      </div>
+    </div>
+
+    <nav class="flex gap-4 items-center text-sm text-slate-700">
+      <a href="#how" class="hover:underline">How it works</a>
+      <a href="#features" class="hover:underline">Features</a>
+      <a href="#impact" class="hover:underline">Impact</a>
+      <a href="#demo" class="px-4 py-2 bg-green-600 text-white rounded-lg shadow">Get started</a>
+    </nav>
+  </header>
+
+  <main class="max-w-6xl mx-auto px-6">
+    <!-- HERO -->
+    <section class="grid md:grid-cols-2 gap-8 items-center py-12">
+      <div>
+        <p class="text-sm text-emerald-600 font-semibold">A window that thinks for itself</p>
+        <h2 class="mt-2 text-4xl font-extrabold leading-tight">
+          Automatically reduce heat, save energy, and protect people from extreme temperatures.
+        </h2>
+
+        <p class="mt-4 text-slate-600">
+          Ecosytrix adjusts transparency, tint, ventilation and heat absorption using sensors and AI — keeping classrooms
+          comfortable while cutting energy use.
+        </p>
+
+        <ul class="mt-6 grid grid-cols-2 gap-3 text-sm">
+          <li class="p-3 bg-white rounded-lg shadow-sm">-Self-tinting electrochromic glass</li>
+          <li class="p-3 bg-white rounded-lg shadow-sm">- Thermal & light sensors</li>
+          <li class="p-3 bg-white rounded-lg shadow-sm">- Night heat extraction vents</li>
+          <li class="p-3 bg-white rounded-lg shadow-sm">- AI Control Hub + App</li>
+        </ul>
+
+        <div class="mt-6 flex gap-3">
+          <a class="px-5 py-3 bg-green-600 text-white rounded-lg shadow hover:bg-green-700" href="#demo">Watch demo idea</a>
+          <a class="px-5 py-3 border border-slate-200 rounded-lg text-slate-700" href="#features">See features</a>
+        </div>
+      </div>
+
+      <div class="relative">
+        <div class="bg-gradient-to-br from-emerald-50 to-white rounded-2xl p-6 shadow-lg">
+          <div class="flex items-center justify-between">
+            <div>
+              <p class="text-xs text-slate-500">Classroom</p>
+              <h3 class="text-lg font-semibold">Before</h3>
+            </div>
+            <div class="text-sm text-slate-500">30°C</div>
+          </div>
+
+          <div class="mt-4 h-48 rounded-lg bg-[url('https://images.unsplash.com/photo-1511451482888-3b0c4b3a38a6?auto=format&fit=crop&w=1000&q=60')] bg-cover bg-center"></div>
+
+          <div class="mt-4 grid grid-cols-3 gap-3">
+            <div class="p-3 bg-white rounded-lg text-center">
+              <div class="text-xs text-slate-500">Energy</div>
+              <div class="font-semibold">+42%</div>
+            </div>
+            <div class="p-3 bg-white rounded-lg text-center">
+              <div class="text-xs text-slate-500">Glare</div>
+              <div class="font-semibold">High</div>
+            </div>
+            <div class="p-3 bg-white rounded-lg text-center">
+              <div class="text-xs text-slate-500">Comfort</div>
+              <div class="font-semibold">Poor</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="absolute -right-8 top-8 w-64 p-4 rounded-2xl bg-gradient-to-tl from-white to-emerald-50 shadow-xl rotate-3">
+          <p class="text-xs text-slate-500">After — Ecosytrix active</p>
+          <h4 class="font-bold">23°C • Comfortable</h4>
+          <div class="mt-3 h-24 rounded-lg bg-[linear-gradient(90deg,rgba(0,0,0,0.06),rgba(255,255,255,0.6))] flex items-center justify-center">
+            <p class="text-sm text-center">Window tinted • Vents open at night • AI learning</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- HOW IT WORKS -->
+    <section id="how" class="py-8">
+      <h3 class="text-2xl font-bold">How it works — simple but impressive</h3>
+      <p class="mt-2 text-slate-600">Ecosytrix uses sensors + AI to cool buildings naturally.</p>
+
+      <div class="mt-6 grid md:grid-cols-3 gap-4">
+        <div class="p-4 bg-white rounded-lg shadow flex gap-3">
+          <i data-lucide="thermometer"></i>
+          <p><strong>Thermal sensors</strong><br><span class="text-sm text-slate-500">Measure heat differences.</span></p>
+        </div>
+
+        <div class="p-4 bg-white rounded-lg shadow flex gap-3">
+          <i data-lucide="sun"></i>
+          <p><strong>Light sensors</strong><br><span class="text-sm text-slate-500">Detect sunlight intensity.</span></p>
+        </div>
+
+        <div class="p-4 bg-white rounded-lg shadow flex gap-3">
+          <i data-lucide="wind"></i>
+          <p><strong>Air quality sensors</strong><br><span class="text-sm text-slate-500">Monitor CO₂ + dust.</span></p>
+        </div>
+      </div>
+
+      <div class="mt-6 grid md:grid-cols-2 gap-4">
+        <div class="p-4 bg-white rounded-lg shadow">
+          <h4 class="font-semibold">Smart tinting film</h4>
+          <p class="text-sm text-slate-500">Glass that darkens on demand.</p>
+        </div>
+        <div class="p-4 bg-white rounded-lg shadow">
+          <h4 class="font-semibold">AI Control Hub</h4>
+          <p class="text-sm text-slate-500">Learns building patterns.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- FEATURES -->
+    <section id="features" class="py-8">
+      <h3 class="text-2xl font-bold">Features</h3>
+      <p class="mt-2 text-slate-600">Modes designed for real buildings.</p>
+
+      <div class="mt-6 grid md:grid-cols-3 gap-4">
+        <div class="p-4 bg-white rounded-lg shadow">
+          <h4 class="font-semibold">Self-Tinting Mode</h4>
+          <p class="text-sm text-slate-500">Auto shades based on sun angle.</p>
+        </div>
+        <div class="p-4 bg-white rounded-lg shadow">
+          <h4 class="font-semibold">Heat Extraction Mode</h4>
+          <p class="text-sm text-slate-500">Night vents release trapped heat.</p>
+        </div>
+        <div class="p-4 bg-white rounded-lg shadow">
+          <h4 class="font-semibold">Classroom Mode</h4>
+          <p class="text-sm text-slate-500">Keeps steady temperature.</p>
+        </div>
+        <div class="p-4 bg-white rounded-lg shadow">
+          <h4 class="font-semibold">Emergency Pollution Mode</h4>
+          <p class="text-sm text-slate-500">Automatically seals vents.</p>
+        </div>
+        <div class="p-4 bg-white rounded-lg shadow">
+          <h4 class="font-semibold">Energy Score Dashboard</h4>
+          <p class="text-sm text-slate-500">Shows monthly energy savings.</p>
+        </div>
+        <div class="p-4 bg-white rounded-lg shadow">
+          <h4 class="font-semibold">Mobile App</h4>
+          <p class="text-sm text-slate-500">Real-time CO₂, glare, heat data.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- IMPACT -->
+    <section id="impact" class="py-8">
+      <h3 class="text-2xl font-bold">Why this matters</h3>
+
+      <div class="mt-4 grid md:grid-cols-3 gap-4">
+        <div class="p-4 bg-white rounded-lg shadow">
+          <h4 class="font-semibold">Heatwaves in the UK</h4>
+          <p class="text-sm text-slate-500">Classrooms reach 30°C+. Ecosytrix cools them.</p>
+        </div>
+        <div class="p-4 bg-white rounded-lg shadow">
+          <h4 class="font-semibold">Lower energy bills</h4>
+          <p class="text-sm text-slate-500">Reduces reliance on fans and AC.</p>
+        </div>
+        <div class="p-4 bg-white rounded-lg shadow">
+          <h4 class="font-semibold">Better learning</h4>
+          <p class="text-sm text-slate-500">Cooler rooms = better focus.</p>
+        </div>
+      </div>
+
+      <div class="mt-6 p-6 bg-gradient-to-r from-emerald-600 to-emerald-400 text-white rounded-lg shadow">
+        <h4 class="text-lg font-bold">Ecosytrix is:</h4>
+        <ul class="mt-3 grid md:grid-cols-3 gap-2">
+          <li>✔Makes a Real impact</li>
+          <li>✔ Sustainable</li>
+          <li>✔ Feasible</li>
+          <li>✔ Saves Energy</li>
+          <li>✔ Adaptive</li>
+          <li>✔ Reduces carbon emissions</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- DEMO -->
+    <section id="demo" class="py-8">
+      <h3 class="text-2xl font-bold">Easy video presentation idea</h3>
+      <p class="mt-2 text-slate-600">You don’t need a prototype — an animation works.</p>
+
+      <div class="mt-6 grid md:grid-cols-2 gap-6">
+        <div class="p-4 bg-white rounded-lg shadow">
+          <h4 class="font-semibold">Storyboard</h4>
+          <ol class="text-sm list-decimal pl-5 text-slate-500 mt-3">
+            <li>Show a classroom overheating.</li>
+            <li>Show window tinting + vent opening.</li>
+            <li>Graph of energy savings.</li>
+            <li>Fake app UI.</li>
+            <li>Before vs after comparison.</li>
+          </ol>
+        </div>
+
+        <div class="p-4 bg-white rounded-lg shadow">
+          <h4 class="font-semibold">Why it wins</h4>
+          <ul class="text-sm text-slate-500 mt-3">
+            <li>Bold and realistic.</li>
+            <li>New category of tech.</li>
+            <li>Visually impressive.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <footer class="py-12 text-center text-sm text-slate-500">
+      © Ecosytrix — For the Internet of Everything Competition.
+	          Website made by Shrihari Bhat
+    </footer>
+  </main>
+
+  <script>
+    lucide.createIcons();
+  </script>
+</body>
+</html>
